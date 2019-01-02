@@ -59,6 +59,7 @@
 25. Customers(91) Categories(8) Employees(10) OrderDetails(518) 
     Orders(196)  Products (77) Shippers(3) Suppliers (29)
 26 & 27 Do not apply to this database
-26. SELECT Model,Make Where DriveTrain=All
->>>>>>> 47c4ef6e5d912d00781b780cd626c58e0fbe5a70
-27. SELECT Country,Type Where Country=USA
+26. SELECT MODEL,MAKE From cars Where DriveTrain= 'All'  
+   92 Rows
+27.   SELECT Type FROM CARS where Origin ='USA'
+   147 Rows
