@@ -1,0 +1,31 @@
+1. SELECT* FROM Customers;
+2. SElECT CustomerID FROM Customers;
+3. SELECT CustomerID,CustomerName FROM Customers;
+4. SELECT ContactName,Address,City FROM Customers;
+5. SELECT Country From Customers;
+6. SELECT CustomerID, CustomerName, Country From Customers;
+7. OrderID Is not available in Customers Table it is in Table Orders
+   SELECT OrderID From Orders
+8. SELECT CustomerID From Orders
+9. SELECT CustomerID,EmployeeID,OrderDate From Orders
+10.SELECT ShipperID,OrderID From Orders
+11.Country is not available in Orders.Chose both tables.
+   SELECT OrderDate,Country FROM Customers,Orders
+12.SELECT OrderDetailID FROM OrderDetails
+13.SELECT Shippername, phone FROM Shippers
+14.SELECT ContactName FROM [Customers]
+15.SELECT LastName, FirstName,Notes FROM Employees
+16.SELECT BirthDate FROM Employees
+17.SELECT EmployeeID,Photo FROM Employees
+18.SELECT CategoryName,Description FROM Categories
+19.SELECT ProductID,ProductName FROM Products
+20.SELECT SupplierID FROM Products
+21.SELECT Unit,Price FROM Products
+22.SELECT Distinct Country FROM Customers (21Records)
+23.SELECT DISTINCT EmployeeID,CustomerID FROM Orders (170Records)
+24. There is 8 Tables in the database
+25. Customers(91) Categories(8) Employees(10) OrderDetails(518) 
+    Orders(196)  Products (77) Shippers(3) Suppliers (29)
+26 & 27 Do not apply to this database
+26. SELECT Model,Make Where DriveTrain=All
+27. SELECT Country,Type Where Country=USA
