@@ -1,0 +1,145 @@
+***91 RECORDS AND I DO NOT HAVE BERLIN IN ANY OF THEM.
+
+1.SELECT * 
+FROM Customers
+WHERE Country='Germany' 
+AND City='Berlin'
+RECORD AFFECTED:0
+
+2.SELECT * FROM Customers
+WHERE Country='Germany'
+AND  City='Paris'
+RECORD AFFECTED:0
+
+3.SELECT * FROM Customers
+WHERE Country='Austria'
+AND  City='Graz'
+RECORD AFFECTED:1
+
+4.SELECT*
+FROM Customers
+WHERE Country='France'
+AND City='Paris'
+RECORD AFFECTED:2
+
+5.SELECT*
+FROM Customers
+WHERE Country='France'
+AND City='Lille'
+RECORD AFFECTED:1
+
+6.SELECT*
+FROM Customers
+WHERE Country='Spain'
+AND City='Barcelona'
+RECORD AFFECTED:1
+
+7.SELECT CustomerID, CustomerName,ContactName
+FROM Customers
+WHERE Country='Germany'
+AND City='Berlin'
+RECORD AFFECTED: 0
+
+8.SELECT CustomerID, CustomerName,ContactName
+FROM Customers
+WHERE Country='Germany'
+AND City='Paris'
+RECORD AFFECTED:0
+
+9.SELECT CustomerID, CustomerName,ContactName
+FROM Customers
+WHERE Country='Austria'
+AND City='Graz'
+RECORD AFFECTED:1
+
+10.SELECT CustomerID, CustomerName,ContactName
+FROM Customers
+WHERE Country='France'
+AND City='Paris'
+RECORD AFFECTED:2
+
+11.SELECT CustomerID, CustomerName,ContactName
+FROM Customers
+WHERE Country='France'
+AND City='Lille'
+RECORD AFFECTED:1
+
+12.SELECT CustomerID, CustomerName,ContactName
+FROM Customers
+WHERE Country='Spain'
+AND City='Barcelona'
+RECORD AFFECTED:1
+
+13.SELECT CustomerID, CustomerName,ContactName
+FROM Customers
+WHERE NOT Country='Mexico'
+RECORD AFFECTED:86
+
+14.SELECT City
+FROM [Customers]
+WHERE NOT Country='Portland'
+RECORD AFFECTED:91
+
+15.SELECT CustomerID,City,Address 
+FROM [Customers]
+WHERE NOT Country='USA'
+RECORD AFFECTED: 78
+
+16.SELECT City
+FROM [Customers]
+WHERE NOT Country='Finland'
+RECORD AFFECTED:89
+
+17.
+SELECT City,Address
+FROM [Customers]
+WHERE NOT Country='Brazil'
+RECORD AFFECTED: 82
+
+18.SELECT City
+FROM [Customers]
+WHERE NOT Country='Germany'
+RECORD AFFECTED: 80
+
+19.SELECT * FROM [Customers]
+WHERE Country='Germany'
+AND City='Mannheim'
+OR City='München'
+RECORD AFFECTED:2
+
+20.SELECT * 
+FROM [Customers]
+WHERE Country='USA'
+AND City='Seattle'
+OR City='Portland'
+RECORD AFFECTED:3
+
+21.SELECT * 
+FROM [Customers]
+WHERE Country='USA'
+AND City='Anchorage'
+OR City='Albuquerque'
+RECORDS AFFECTED:2
+
+22.SELECT * 
+FROM [Customers]
+WHERE Country='USA'
+AND City='Kirkland'
+OR City='Seattle'
+RECORD AFFECTED:2
+
+23.SELECT*
+FROM Customers
+WHERE City='México D.F.'
+OR City='Spain'
+RECORDS AFFECTED:5
+
+24.SELECT*
+FROM Customers
+WHERE Country='Spain'
+AND City='Madrid'
+OR City='Barcelona'
+OR City='Sevilla'
+RECORDS AFFECTED:5
+
+
